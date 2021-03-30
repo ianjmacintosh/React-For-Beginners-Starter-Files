@@ -8,9 +8,9 @@ class App extends React.Component {
     render() {
         return (
             <div className="catch-of-the-day">
-                <Header />
+                <Header tagline="Fresh Seafood Market" />
                 <Inventory></Inventory>
-                <Order></Order>
+            <Order></Order>
             </div>
         )
     }
