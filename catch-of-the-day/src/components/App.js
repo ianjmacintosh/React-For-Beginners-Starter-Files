@@ -19,6 +19,8 @@ class App extends React.Component {
     match: PropTypes.object,
   };
 
+  storeId = "";
+
   componentDidMount() {
     const params = this.props.match.params;
     const localStorageRef = localStorage.getItem(params.storeId);
@@ -127,6 +129,7 @@ class App extends React.Component {
           deleteFish={this.deleteFish}
           fishes={this.state.fishes}
           loadSamples={this.loadSamples}
+          storeId={this.props.match.params.storeId}
         ></Inventory>
       </div>
     );

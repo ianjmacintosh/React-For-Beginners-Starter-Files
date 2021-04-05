@@ -5,9 +5,9 @@ import { formatPrice } from "../helpers";
 class Fish extends React.Component {
   static propTypes = {
     details: PropTypes.shape({
-      name: PropTypes.number,
-      image: PropTypes.number,
-      desc: PropTypes.number,
+      name: PropTypes.string,
+      image: PropTypes.string,
+      desc: PropTypes.string,
       status: PropTypes.string,
       price: PropTypes.number,
     }),

@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 class EditFishForm extends React.Component {
   static propTypes = {
     fish: PropTypes.shape({
-      name: PropTypes.number,
-      image: PropTypes.number,
-      desc: PropTypes.number,
+      name: PropTypes.string,
+      image: PropTypes.string,
+      desc: PropTypes.string,
       status: PropTypes.string,
       price: PropTypes.number,
     }),
